@@ -60,9 +60,14 @@ img {
   padding-block: 4rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-hero > * {
   flex: 1;
+}
+.hero-left,
+.hero-right {
+  min-inline-size: 400px;
 }
 .hero-left {
   display: flex;
@@ -77,6 +82,12 @@ img {
 .hero-right img{
   width: 100%;
 }
+@media (width < 832px) {
+  .hero-left {
+    align-items: center;
+    padding: 2rem;
+  }
+} 
 /* HERO END */
 
 /* MAIN START */
@@ -133,8 +144,9 @@ img {
 .sub-cta {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding-block: 4rem;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   border-radius: 20px;
   background-color: #005fe4;
   color: #F9FAF8;
