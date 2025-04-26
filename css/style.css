@@ -53,6 +53,9 @@ img {
   margin: 0;
   padding: 0;
 }
+.hero-nav a {
+  padding: 0.5rem;
+}
 .hero-hero {
   padding-block: 4rem;
   display: flex;
@@ -77,10 +80,6 @@ img {
 /* HERO END */
 
 /* MAIN START */
-article {
-  min-height: 200px;
-  border: 1px solid black;
-}
 .goals .wrap {
   padding-block: 10rem;
   text-align: center;
@@ -127,4 +126,40 @@ article {
 .quote-author {
   align-self: end;
   font-size: 1.5rem;
+}
+.subscribe .wrap {
+  padding-block: 10rem;
+}
+.sub-cta {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+  padding-inline: 1rem;
+  border-radius: 20px;
+  background-color: #005fe4;
+  color: #F9FAF8;
+}
+.sub-cta button,
+.hero button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #F9FAF8;
+  background-color: #005fe4;
+  color: #F9FAF8;
+}
+.hero button {
+  border-color: #005fe4;
+}
+.sub-cta button:hover,
+.hero button:hover {
+  background-color: #F9FAF8;
+  color: #005fe4;
+}
+.footer {
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+.footer .wrap {
+  padding: 2rem;
+  text-align: center;
 }
